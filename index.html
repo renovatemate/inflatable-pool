@@ -15,25 +15,46 @@
     }
 
     header {
-      text-align: center;
-      padding: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
       border-bottom: 1px solid #eee;
     }
 
-    header h1 {
+    header h2 {
       margin: 0;
     }
 
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
 
     .card {
       border: 1px solid #eee;
       padding: 15px;
-      margin-bottom: 15px;
     }
 
     footer {
@@ -41,7 +62,6 @@
       padding: 20px;
       border-top: 1px solid #eee;
       color: #777;
-      margin-top: 40px;
     }
   </style>
 
@@ -50,27 +70,40 @@
 <body>
 
   <header>
-    <h1>Inflatable Pool Guide</h1>
-    <p>Ideas, designs, and backyard inspiration</p>
+    <h2>Inflatable Pools</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Ideas</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
+
+  <section class="hero">
+    <h1>Inflatable Pool Ideas & Backyard Designs</h1>
+    <p>Simple guides and inspiration for summer setups</p>
+  </section>
 
   <div class="container">
 
-    <h2>Welcome</h2>
-    <p>
-      Discover inflatable pool ideas, backyard setups, and summer inspiration.
-    </p>
+    <h2>Featured Ideas</h2>
 
-    <h2>Latest Ideas</h2>
+    <div class="grid">
 
-    <div class="card">
-      <h3>Luxury Backyard Pool Setup</h3>
-      <p>Modern inflatable pool design ideas for your backyard.</p>
-    </div>
+      <div class="card">
+        <h3>Luxury Backyard Setup</h3>
+        <p>Modern inflatable pool design ideas.</p>
+      </div>
 
-    <div class="card">
-      <h3>Family Pool Setup</h3>
-      <p>Safe and fun inflatable pool ideas for family use.</p>
+      <div class="card">
+        <h3>Family Pool Design</h3>
+        <p>Safe and fun setups for families.</p>
+      </div>
+
+      <div class="card">
+        <h3>Small Space Pools</h3>
+        <p>Perfect ideas for small gardens.</p>
+      </div>
+
     </div>
 
   </div>
